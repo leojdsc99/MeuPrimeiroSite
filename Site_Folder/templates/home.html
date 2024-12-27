@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block body %}
+<div>
+    <h1 style="color: orange">Comunidade Impressionadora!</h1>
+    <hr>
+    {% for post in posts  %}
+        <div class = "row border mt-4 p-3 meupost" >
+            <div class = "col col-2">
+                <div class="image pe-2"> <img src="{{ url_for('static', filename='fotos_perfil/' ~ post.autor.foto_perfil) }}" class="rounded" width="200"> </div>
+                <strong>
+                    {{ post.autor.username }}
+                    <div class="row justify-content-left">
+                        {% for curso in post.autor.cursos.split(';') %}
+                            <button type="button" class="btn btn-success mt-2" disabled>{{ curso }}</button>
+                        {% endfor %}
+                    </div>
+                </strong>
+            </div>
+
+            <div class = "col col-9">
+                <h3>
+                    <a style = "text-decoration: none" href = "{{ url_for('exibir_post',post_id = post.id) }}">
+                        {{ post.titulo }}
+                    </a>
+                </h3>
+                <p>
+                    {{ post.corpo }}
+                </p>
+            </div> 
+
+        </div>
+    {% endfor  %}
+</div>
+{% endblock %}

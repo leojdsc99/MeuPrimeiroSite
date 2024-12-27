@@ -1,0 +1,69 @@
+css
+
+.card {
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff
+}
+
+.stats {
+    background: #f2f5f8 !important;
+    color: #000 !important
+}
+
+.articles {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number1 {
+    font-weight: 500
+}
+
+.followers {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number2 {
+    font-weight: 500
+}
+
+.rating {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number3 {
+    font-weight: 500
+}
+/* Configuração principal para ocupar toda a altura */
+.main-container {
+    min-height: 100vh; /* Garante que o conteúdo ocupe 100% da altura da tela */
+    display: flex; /* Ativa flexbox */
+    flex-direction: column; /* Alinha os itens em coluna */
+    justify-content: space-between; /* Espaço entre o perfil e o formulário */
+}
+
+/* Formulário posicionado na parte inferior */
+.form-section {
+    width: 100%; /* Largura total */
+    margin-top: auto; /* Empurra o formulário para baixo */
+    padding: 20px; /* Espaço ao redor */
+    background-color: #f9f9f9; /* Cor de fundo opcional */
+}
+
+/* Ajuste do card para evitar sobreposição */
+.card {
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.meupost
+{
+    background: #f2f5f8 !important;   
+}
